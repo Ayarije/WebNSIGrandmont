@@ -1,16 +1,23 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
+html {
     height: 100%;
-    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+
+    font-family: Helvetica, sans-serif;
+    
+    background-image: url("./assets/background.jpg");
 }
 
 #normal {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
+    display: grid;
+    min-height: 100%;
+    min-width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
 
 #main {
@@ -26,5 +33,8 @@ body {
 }
 
 .cloud {
-    background-color: aqua;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin: auto;
 }
